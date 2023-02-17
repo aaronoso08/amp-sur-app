@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-// import { Amplify } from 'aws-amplify';
 import QuizPage from './Quizpage';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
 import Amplify from 'aws-amplify';

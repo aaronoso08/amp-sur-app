@@ -6,14 +6,7 @@ import './QuizPage.css';
 import './style.css';
 import './QuizQuestion.css';
 import ProgressBar from './ProgressBar';
-import Question from './images/question.mp4';
-import Questiontwo from './images/questiontwo.mp4';
-import Questionthree from './images/questionthree.mp4';
-import Questionfour from './images/questionfour.mp4';
-import Questionfive from './images/questionfive.mp4';
-import Questionsix from './images/questionsix.mp4';
-import Questionseven from './images/questionseven.mp4';
-import Questionone from './images/questionone.mp4';
+
 
 const QuizPage = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -24,36 +17,36 @@ const QuizPage = () => {
 
     {
       question: "Press Video Response to submit answer after viewing",
-      video: Questionone,
+      video: " https://luxorsurveyapp-storage-48413d43211922-luxordev.s3.amazonaws.com/public/questionone.mp4",
     },
     {
       question: "Press Video Response to submit answer after viewing",
-      video: Question,
+      video: "https://luxorsurveyapp-storage-48413d43211922-luxordev.s3.amazonaws.com/public/question-1.mp4",
     },
     {
         question: "Press Video Response to submit answer after viewing",
-        video: Questiontwo,
+        video: "https://luxorsurveyapp-storage-48413d43211922-luxordev.s3.amazonaws.com/public/questiontwo.mp4",
     },
     {
       question: "Press Video Response to submit answer after viewing",
-      video: Questionthree,
+      video: "https://luxorsurveyapp-storage-48413d43211922-luxordev.s3.amazonaws.com/public/questionthree.mp4",
     },
     {
         question: "Press Video Response to submit answer after viewing",
-            video: Questionfour,
+            video: "https://luxorsurveyapp-storage-48413d43211922-luxordev.s3.amazonaws.com/public/questionfour.mp4",
           },
           {
               question: "Press Video Response to submit answer after viewing",
-              video: Questionfive,
+              video: "https://luxorsurveyapp-storage-48413d43211922-luxordev.s3.amazonaws.com/public/questionfive.mp4",
           },
           {
             question: "Press Video Response to submit answer after viewing",
-            video: Questionsix,
+            video: "https://luxorsurveyapp-storage-48413d43211922-luxordev.s3.amazonaws.com/public/questionsix.mp4",
           },
-      {
-          question: "Press Video Response to submit answer after viewing",
-          video: Questionseven
-        },
+          {
+            question: "Press Video Response to submit answer after viewing",
+            video: "https://luxorsurveyapp-storage-48413d43211922-luxordev.s3.amazonaws.com/public/questionseven.mp4",
+          },
   ];
 
 

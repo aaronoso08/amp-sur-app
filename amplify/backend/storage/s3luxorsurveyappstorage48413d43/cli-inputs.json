@@ -1,0 +1,12 @@
+{
+  "resourceName": "s3luxorsurveyappstorage48413d43",
+  "bucketName": "luxorsurveyapp-storage-48413d43",
+  "policyUUID": "a9fbc0fb",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}
