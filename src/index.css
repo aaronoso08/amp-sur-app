@@ -1,4 +1,14 @@
+
+:root {
+  --amplify-primary-color: #000000;
+  --amplify-primary-tint: #000000;
+  --amplify-primary-shade: #000000;
+  --amplify-background-color: #ffffff;
+}
+
+
 body {
+  background: url('https://i.pinimg.com/736x/c9/30/f8/c930f81ef783bb62427263c33638d392.jpg') center fixed;
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -6,9 +16,4 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }

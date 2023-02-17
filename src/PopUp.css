@@ -1,0 +1,69 @@
+
+.sign-out-button {
+  background-color: rgb(39, 37, 37);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 9px 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  margin-top: auto; /* added */
+  transition: background-color 0.3s ease-in-out;
+  }
+  
+  .sign-out-button:hover {
+  background-color: rgba(39, 37, 37, 0.8);
+  cursor: pointer;
+  }
+
+.submit-button {
+  background-color: rgb(197, 12, 12);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 9px 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: rgba(197, 12, 12, 0.8);
+  cursor: pointer;
+}
+
+
+
+.modal-header {
+  background-color: rgb(246, 246, 246);
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.modal-title {
+  font-size: 18px;
+}
+
+.modal-body {
+  text-align: center;
+  padding: 20px;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+

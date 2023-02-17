@@ -1,0 +1,20 @@
+{
+  "luxordev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-authcra-luxordev-211922-authRole",
+      "UnauthRoleArn": "arn:aws:iam::796760918760:role/amplify-authcra-luxordev-211922-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::796760918760:role/amplify-authcra-luxordev-211922-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-authcra-luxordev-211922-deployment",
+      "UnauthRoleName": "amplify-authcra-luxordev-211922-unauthRole",
+      "StackName": "amplify-authcra-luxordev-211922",
+      "StackId": "arn:aws:cloudformation:us-east-1:796760918760:stack/amplify-authcra-luxordev-211922/bfbc47e0-af08-11ed-886e-0e7edd3bbbc5",
+      "AmplifyAppId": "d7zo1g6am1e9o"
+    },
+    "categories": {
+      "auth": {
+        "cognitocf0c6096": {}
+      }
+    }
+  }
+}

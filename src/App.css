@@ -1,32 +1,56 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  display: flex;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 10px;
+  position: relative;
+}
+
+
+
+
+.typerwriter-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; 
+  border-right: .15em solid rgb(26, 24, 24);
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em;
+  animation: 
+    typing 1.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(7, 7, 7) }
+}
+
+.start-quiz-button {
+  background-color: rgb(39, 37, 37);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: none;
+  border-radius: 10px;
+  padding: 9px 20px;
+  width: 100%;
+  text-align: center; 
+  font-size: 11px;
+  margin-top: 20px;
 }

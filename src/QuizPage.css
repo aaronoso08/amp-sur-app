@@ -1,0 +1,129 @@
+
+      .recording-container {
+        width: 85%;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        position: relative;
+        padding: 20px;
+      }
+      
+      .stop-recording-button {
+        width: 40%;
+      }
+      
+      .recording-button {
+        background-color: rgb(197, 12, 12);
+        color: rgb(255, 255, 255);
+        border-radius: 9px;
+        padding: 9px 20px;
+        width: 100%;
+        font-size: 13px;
+      }  
+          
+      p {
+        background-color: #F5F5F5;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      
+                    
+      .webcam-container {
+        display: flex;
+        justify-content: center;
+      }
+      
+             .quiz-page {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            }
+            
+            .question-container {
+              width: 85%;
+              height: 85%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-between;
+              background-color: white;
+              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+              border-radius: 10px;
+              position: relative;
+              padding: 20px;
+            }
+            
+            .question-text {
+              font-size: 1.0rem;
+              margin-bottom: 1.5rem;
+              font-weight: bold;
+              text-align: center;
+              color: #000000;
+              text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+              position: relative;
+              top: -1rem;
+              }
+            
+            .form {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-between;
+            }
+            
+            .left-button-container {
+              width: 40%;
+              float: left;
+              position: absolute;
+              bottom: 20px;
+              left: 20px;
+            }
+            
+            .right-button-container {
+              width: 40%;
+              float: right;
+              position: absolute;
+              bottom: 20px;
+              right: 20px;
+            }
+            
+            
+            .form-container {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              margin-top: 20px;
+            }
+            
+            
+            .left-button {
+              background-color: rgb(197, 12, 12);
+              color: white;
+              border: none;
+              border-radius: 10px;
+              padding: 9px 20px;
+              width: 100%;
+              text-align: center; 
+              font-size: 11px;
+            }
+      
+            .right-button {
+              background-color: rgb(90, 88, 88);
+              color: white;
+              border: none;
+              border-radius: 8px;
+              padding: 9px 20px;
+              width: 100%;
+              text-align: center; 
+              font-size: 11px;
+            }
