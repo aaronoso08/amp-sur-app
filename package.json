@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-amplify/storage": "^5.1.5",
     "@aws-amplify/ui-react": "^1.2.6",
+    "@aws-sdk/client-dynamodb": "^3.276.0",
     "aws-amplify": "^4.3.14",
+    "aws-sdk": "^2.1320.0",
     "react": "^16.13.1",
     "react-bootstrap": "^2.7.1",
     "react-dom": "^16.13.1",

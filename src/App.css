@@ -9,8 +9,6 @@
 }
 
 
-
-
 .typerwriter-container {
   height: 100vh;
   display: flex;
@@ -21,7 +19,7 @@
 
 .typewriter h1 {
   color: #fff;
-  font-family: monospace;
+  font-family: sans-serif;
   overflow: hidden; 
   border-right: .15em solid rgb(26, 24, 24);
   white-space: nowrap; 
@@ -54,3 +52,4 @@
   font-size: 11px;
   margin-top: 20px;
 }
+

@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "cognitocf0c6096": {}
+      },
+      "storage": {
+        "s3luxorsurveyappstorage48413d43": {}
+      },
+      "api": {
+        "luxorsurveyapp": {}
       }
     }
   }

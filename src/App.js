@@ -1,35 +1,33 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import QuizPage from './Quizpage';
-import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+import { withAuthenticator } from '@aws-amplify/ui-react';
 import Amplify from 'aws-amplify';
 import aws_exports from './aws-exports';
 
 Amplify.configure(aws_exports);
 
-class App extends Component {
-  state = { currentPage: 'home' };
 
-  render() {
-    return (
-      <div className="App">
-          {this.state.currentPage === 'home' && (
-            <div>
-            <div className="typerwriter-container">
-              <div className="typewriter">
-                <h1>DIGITAL SURVEY</h1>
-              <button className="start-quiz-button" onClick={() => this.setState({ currentPage: 'quiz' })}>BEGIN SURVEY</button>
-            </div>
+const App = () => {
+  const [currentPage, setCurrentPage] = useState('home');
+ 
+  return (
+    <div className="App">
+      {currentPage === 'home' && (
+        <div>
+          <div className="typerwriter-container">
+            <div className="typewriter">
+              <h1>DIGITAL SURVEY</h1>
+              <button className="start-quiz-button" onClick={() => setCurrentPage('quiz')}>
+                BEGIN SURVEY
+              </button>
             </div>
           </div>
-          )}
-          {this.state.currentPage === 'quiz' && <QuizPage />}
-          <AmplifySignOut/>
         </div>
-   
-    );
-  }
-}
+      )}
+      {currentPage === 'quiz' && <QuizPage/>}
+    </div>
+  );
+};
 
 export default withAuthenticator(App);
-//adskfhal;kasdlkjfa;

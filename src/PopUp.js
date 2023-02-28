@@ -2,6 +2,9 @@ import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import './PopUp.css';
 
+
+
+
 const PopUp = (props) => {
   return (
     <Modal
