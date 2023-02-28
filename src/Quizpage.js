@@ -148,8 +148,6 @@ const QuizPage = () => {
               )}
 
 
-
-
             <Modal show={showModal} onHide={() => setShowModal(false)} centered>
               <Modal.Header>
                 <Modal.Title>Thank you for completing the survey!</Modal.Title>
@@ -162,7 +160,6 @@ const QuizPage = () => {
             </div>
             
             )}
-
 
 export default QuizPage;
 
