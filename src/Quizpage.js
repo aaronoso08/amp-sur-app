@@ -150,10 +150,9 @@ const QuizPage = () => {
 
             <Modal show={showModal} onHide={() => setShowModal(false)} centered>
               <Modal.Header>
-                <Modal.Title>Thank you for completing the survey!</Modal.Title>
+                <Modal.Title></Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                <p>Please submit your answers to finalize the survey:</p>
                 <AmplifySignOut onSignOut={() => setShowModal(false)} />
               </Modal.Body>
             </Modal>
