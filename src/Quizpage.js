@@ -150,7 +150,7 @@ const QuizPage = () => {
 
             <Modal show={showModal} onHide={() => setShowModal(false)} centered>
               <Modal.Header>
-                <Modal.Title></Modal.Title>
+                <Modal.Title>   </Modal.Title>
               </Modal.Header>
               <Modal.Body>
                 <AmplifySignOut onSignOut={() => setShowModal(false)} />
