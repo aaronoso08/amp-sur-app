@@ -1,6 +1,11 @@
 import React, { useRef, useState } from 'react';
 import Webcam from 'react-webcam';
 import AWS from 'aws-sdk';
+import { API } from 'aws-amplify';
+
+
+
+
 
 const videoConstraints = {
   facingMode: 'user',
@@ -26,11 +31,15 @@ const MyWebcam = () => {
       Body: videoBlob,
     };
 
-    s3.putObject(params, (err, data) => {
+    s3.putObject(params, async (err, data) => {
       if (err) {
         console.log(err);
       } else {
         console.log(`Successfully uploaded video to ${params.Bucket}/${params.Key}`);
+  
+        // Make API request to store video metadata in your database
+        const response = await API.post('luxorsurveyapp', '/videos', { body: { key: params.Key } });
+        console.log(response);
       }
     });
   };

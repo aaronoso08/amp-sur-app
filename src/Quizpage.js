@@ -7,6 +7,8 @@ import './QuizQuestion.css';
 import ProgressBar from './ProgressBar';
 import MyWebcam from './MyWebcam';
 import { AmplifySignOut } from '@aws-amplify/ui-react';
+import { Storage } from 'aws-amplify';
+import { API } from 'aws-amplify';
 
 
 const QuizPage = () => {
@@ -14,7 +16,9 @@ const QuizPage = () => {
   const [recording, setRecording] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [videoPlayed, setVideoPlayed] = useState(false); // add state variable
+  const [recordedVideo, setRecordedVideo] = useState(null);
   const videoRef = useRef(null);
+  
   const questions = [
 
     {
@@ -62,8 +66,8 @@ const QuizPage = () => {
   useEffect(() => {
     const video = videoRef.current;
     video.addEventListener('ended', () => {
-    video.pause();
-    setVideoPlayed(true);
+      video.pause();
+      setVideoPlayed(true);
     });
   }, []);
 
@@ -93,6 +97,22 @@ const QuizPage = () => {
   setRecording(false);
   };
 
+  const onStopRecording = async (videoBlob) => {
+    setRecordedVideo(videoBlob);
+  
+    try {
+      const file = await Storage.put('my-video-file.mp4', videoBlob, {
+        contentType: 'video/mp4'
+      });
+      console.log(`Successfully uploaded video to S3: ${file.key}`);
+  
+      const apiResponse = await API.post('luxorsurveyapp', '/videos', { body: { key: file.key }});
+      console.log(apiResponse);
+  
+    } catch (error) {
+      console.error(error);
+    }
+  };
   return (
     
       <div className="quiz-page">

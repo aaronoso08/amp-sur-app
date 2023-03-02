@@ -1,5 +1,5 @@
 
-  
+/*   
   .modal-header {
     background-color: rgb(246, 246, 246);
     color: rgb(0, 0, 0);
@@ -9,23 +9,20 @@
   .modal-title {
     font-size: 13px;
   }
-  
-  .modal-body {
-    text-align: center;
-    padding: 20px;
+   */
+  /* .modal-body {
+    background: url('https://luxorsurveyapp-storage-48413d43211922-luxordev.s3.amazonaws.com/public/popupbackground.png') center fixed;
+    background-size: cover;
   }
-  
-  .modal-content {
-    max-width: 600px; /* set a max-width to the content if desired */
-    max-height: 100vh; /* set a max-height to the content if desired */
-    overflow: auto; /* add scrollbars if the content is too big */
+   */
+  /* .modal-content {
+
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    background: url('https://luxorsurveyapp-storage-48413d43211922-luxordev.s3.amazonaws.com/public/popupbackground.png') center fixed;
-    background-size: cover;
-    }
+
+    } */
   
     .modal {
       position: fixed;
@@ -37,7 +34,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      z-index: 9999; /* make sure the modal is on top of everything else */
+
     }
 
   
@@ -46,17 +43,26 @@
       top: 48%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: white;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
       border-radius: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 70%;
-      height: 34%;
+      width: 300px;
+      height: 200px;
+      background: url('https://luxorsurveyapp-storage-48413d43211922-luxordev.s3.amazonaws.com/public/popupbackground.png') center fixed;
+      background-size: cover;
+      overflow: hidden;
     }
 
+
+    @media screen and (max-width: 768px) {
+      .modal-content {
+        width: 76%;
+        height: 30%;
+      }
+    }
 
 
 
