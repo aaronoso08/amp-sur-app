@@ -38,7 +38,7 @@ const MyWebcam = () => {
         console.log(`Successfully uploaded video to ${params.Bucket}/${params.Key}`);
   
         // Make API request to store video metadata in your database
-        const response = await API.post('luxorsurveyapp', '/videos', { body: { key: params.Key } });
+        const response = await API.post('luxorsurveyapp-luxordev', '/videos', { body: { key: params.Key } });
         console.log(response);
       }
     });

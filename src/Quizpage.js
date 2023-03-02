@@ -17,6 +17,7 @@ const QuizPage = () => {
   const [showModal, setShowModal] = useState(false);
   const [videoPlayed, setVideoPlayed] = useState(false); // add state variable
   const [recordedVideo, setRecordedVideo] = useState(null);
+  const [videoResponse, setVideoResponse] = useState(null);
   const videoRef = useRef(null);
   
   const questions = [
@@ -106,8 +107,9 @@ const QuizPage = () => {
       });
       console.log(`Successfully uploaded video to S3: ${file.key}`);
   
-      const apiResponse = await API.post('luxorsurveyapp', '/videos', { body: { key: file.key }});
+      const apiResponse = await API.post('luxorsurveyapp-luxordev', '/videos', { body: { key: file.key }});
       console.log(apiResponse);
+      setVideoResponse(apiResponse);
   
     } catch (error) {
       console.error(error);
@@ -176,6 +178,10 @@ const QuizPage = () => {
                 <AmplifySignOut onSignOut={() => setShowModal(false)} />
               </Modal.Body>
             </Modal>
+            {videoResponse && (
+  <p>Video metadata successfully stored in database.</p>
+)}
+
             </div>
             
             )}
